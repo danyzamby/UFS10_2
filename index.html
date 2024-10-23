@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corso di Public Speaking Online</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <style>
+        .gradient-text {
+            background: linear-gradient(45deg, #2563eb, #3b82f6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+        }
+        
+        .card-hover {
+            transition: transform 0.3s ease-in-out;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+        }
+
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+
+        .custom-shape-divider-bottom-1684986405 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+            transform: rotate(180deg);
+        }
+
+        .custom-shape-divider-bottom-1684986405 svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 150px;
+        }
+
+        .custom-shape-divider-bottom-1684986405 .shape-fill {
+            fill: #FFFFFF;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header con effetto glassmorphism -->
+    <header class="bg-white bg-opacity-90 backdrop-filter backdrop-blur-lg fixed w-full z-50 shadow-sm">
+        <nav class="max-w-7xl mx-auto px-4 py-4">
+            <h1 class="text-3xl font-bold gradient-text">Maestro del Public Speaking</h1>
+        </nav>
+    </header>
+
+    <!-- Hero Section con sfondo gradiente e onde -->
+    <main>
+        <div class="relative hero-gradient min-h-screen flex items-center justify-center">
+            <div class="max-w-7xl mx-auto px-4 py-32 text-center text-white relative z-10">
+                <h2 class="text-5xl md:text-7xl font-extrabold animate__animated animate__fadeIn">
+                    Diventa un Oratore 
+                    <span class="block mt-2">Straordinario</span>
+                </h2>
+                <p class="mt-6 text-xl md:text-2xl text-blue-100 animate__animated animate__fadeIn animate__delay-1s">
+                    Scopri i segreti della comunicazione efficace e conquista il tuo pubblico
+                </p>
+                <div class="mt-10 animate__animated animate__fadeIn animate__delay-2s">
+                    <a href="#form" class="bg-white text-blue-600 px-8 py-4 rounded-full font-bold text-lg hover:bg-blue-50 transition-colors shadow-lg hover:shadow-xl">
+                        Inizia Ora
+                    </a>
+                </div>
+            </div>
+            <div class="custom-shape-divider-bottom-1684986405">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+                </svg>
+            </div>
+        </div>
+
+        <!-- Punti di Forza con cards animate -->
+        <div class="bg-white py-24">
+            <div class="max-w-7xl mx-auto px-4">
+                <h3 class="text-4xl font-bold text-center mb-16 gradient-text">Punti di Forza del Corso</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="p-8 bg-white rounded-xl shadow-lg card-hover border border-blue-100">
+                        <div class="text-blue-500 text-4xl mb-4">🎯</div>
+                        <h4 class="font-bold text-2xl mb-4 text-gray-800">Metodologia Pratica</h4>
+                        <p class="text-gray-600">Esercizi concreti e tecniche immediatamente applicabili nel mondo reale</p>
+                    </div>
+                    <div class="p-8 bg-white rounded-xl shadow-lg card-hover border border-blue-100">
+                        <div class="text-blue-500 text-4xl mb-4">⚡</div>
+                        <h4 class="font-bold text-2xl mb-4 text-gray-800">Flessibilità Totale</h4>
+                        <p class="text-gray-600">Studia quando vuoi e da dove vuoi, con accesso illimitato ai contenuti</p>
+                    </div>
+                    <div class="p-8 bg-white rounded-xl shadow-lg card-hover border border-blue-100">
+                        <div class="text-blue-500 text-4xl mb-4">🤝</div>
+                        <h4 class="font-bold text-2xl mb-4 text-gray-800">Supporto Costante</h4>
+                        <p class="text-gray-600">Feedback personalizzato e community attiva di studenti</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Testimonianze con design moderno -->
+        <div class="bg-gray-50 py-24">
+            <div class="max-w-7xl mx-auto px-4">
+                <h3 class="text-4xl font-bold text-center mb-16 gradient-text">Le Storie di Successo</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="p-8 bg-white rounded-xl shadow-lg card-hover">
+                        <div class="flex items-center mb-6">
+                            <img src="/api/placeholder/64/64" alt="Profile" class="rounded-full w-16 h-16 mr-4"/>
+                            <div>
+                                <p class="font-bold text-xl text-gray-800">Maria Rossi</p>
+                                <p class="text-blue-500">Manager</p>
+                            </div>
+                        </div>
+                        <p class="italic text-gray-600 text-lg">"Questo corso ha trasformato completamente il mio modo di parlare in pubblico. Ora mi sento sicura e preparata in ogni presentazione."</p>
+                    </div>
+                    <div class="p-8 bg-white rounded-xl shadow-lg card-hover">
+                        <div class="flex items-center mb-6">
+                            <img src="/api/placeholder/64/64" alt="Profile" class="rounded-full w-16 h-16 mr-4"/>
+                            <div>
+                                <p class="font-bold text-xl text-gray-800">Marco Bianchi</p>
+                                <p class="text-blue-500">Imprenditore</p>
+                            </div>
+                        </div>
+                        <p class="italic text-gray-600 text-lg">"Tecniche efficaci e facilmente applicabili. Ho notato miglioramenti fin dalla prima settimana."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Prezzo e Form con design accattivante -->
+        <div class="bg-white py-24" id="form">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h3 class="text-4xl font-bold mb-6 gradient-text">Inizia Ora</h3>
+                    <div class="inline-block bg-blue-50 rounded-full px-8 py-4 animate-float">
+                        <p class="text-5xl font-bold text-blue-600">14,90€</p>
+                        <p class="text-blue-500 mt-2">Accesso completo a vita</p>
+                    </div>
+                </div>
+
+                <div class="max-w-md mx-auto bg-white rounded-2xl shadow-xl p-8 border border-blue-100">
+                    <form class="space-y-6">
+                        <div>
+                            <label for="nome" class="block text-sm font-medium text-gray-700 mb-1">Nome</label>
+                            <input type="text" id="nome" name="nome" required 
+                                   class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all">
+                        </div>
+                        <div>
+                            <label for="cognome" class="block text-sm font-medium text-gray-700 mb-1">Cognome</label>
+                            <input type="text" id="cognome" name="cognome" required 
+                                   class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                            <input type="email" id="email" name="email" required 
+                                   class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all">
+                        </div>
+                        <button type="submit" 
+                                class="w-full bg-blue-600 text-white py-4 px-6 rounded-lg font-bold text-lg hover:bg-blue-700 transition-all transform hover:scale-105 shadow-lg hover:shadow-xl">
+                            Iscriviti Ora
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer moderno -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="text-blue-200">&copy; 2024 Corso di Public Speaking. Tutti i diritti riservati.</p>
+        </div>
+    </footer>
+</body>
+</html>
